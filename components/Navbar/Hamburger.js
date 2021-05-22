@@ -2,8 +2,8 @@ import styled from 'styled-components'
 
 
 const StyledHamburger = styled.div`
-  width: 3rem;
-  height: 3.7rem;
+  width: 2.5rem;
+  height: 3.8rem;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -16,9 +16,9 @@ const StyledHamburger = styled.div`
    }
 
   div {
-    background-color: ${({open}) => open ? 'white' : 'black'};
+    background-color: ${({open}) => open ? 'white' : 'white'};
     width: 100%;
-    height: 0.5rem;
+    height: 0.3rem;
     margin: 0.2rem;
     text-align: center;
     border-radius: 10px;
@@ -28,7 +28,7 @@ const StyledHamburger = styled.div`
 
     &:nth-child(1) {
         transform: ${({open}) => open ? 'rotate(45deg)' : 'rotate(0)'};
-        transform-origin: 1px 0.7rem;
+        transform-origin: 1px 0.6rem;
     }
 
     &:nth-child(2) {

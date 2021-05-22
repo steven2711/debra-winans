@@ -33,7 +33,7 @@ export default function Layout({title, keywords, description, children}) {
 
 
 Layout.defaultProps = {
-    title: '',
+    title: 'Dr. Debra D. Winans',
     description: '',
     keywords: ''
 }

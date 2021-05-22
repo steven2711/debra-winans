@@ -18,7 +18,7 @@ export default function Header() {
             <nav>
                 <div className={styles.logo}>
                     <Link href="/">
-                        <a>Logo</a>
+                        <a>Dr. Debra D. Winans</a>
                     </Link>
                 </div>
                 

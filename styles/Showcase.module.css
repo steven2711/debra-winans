@@ -1,0 +1,75 @@
+.showcase {
+  height: 100vh;
+  width: 100%;
+  background: #000 url("/images/showcase.jpg") no-repeat center center/cover;
+  color: #fff;
+  margin-top: 60px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textBox {
+  animation-name: fadeIn;
+  animation-duration: 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  padding: 4rem 0 4rem 6rem;
+  font-size: 1.2rem;
+  background: rgba(0, 0, 0, 0.6);
+  width: 50%;
+  opacity: 0;
+  border-radius: 20px;
+}
+
+.textBox p {
+  font-size: 1.5rem;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.showcase::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 650px) {
+  .showcase {
+    background: #000 url("/images/showcase-small.jpg") no-repeat center
+      center/cover;
+    justify-content: flex-end;
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .textBox {
+    border: 1px green solid;
+    width: 100%;
+    margin-bottom: 5rem;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0 3rem;
+  }
+}
+
+.showcase * {
+  z-index: 20;
+}
+
+.showcase h1 {
+  font-size: 40px;
+  margin-bottom: 0;
+}

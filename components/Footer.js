@@ -1,7 +1,9 @@
+import styles from '@/styles/Footer.module.css'
+
 export default function Footer() {
     return (
-        <div>
-            <h1>Foot in that ass section</h1>
-        </div>
+        <footer className={styles.footer}>
+            <p>Copyright &amp; 2021</p>
+        </footer>
     )
 }

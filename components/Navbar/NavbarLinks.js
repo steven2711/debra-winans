@@ -9,7 +9,7 @@ import {FaFacebookF, FaInstagram} from 'react-icons/fa'
 const StyledNavbarLinks = styled.div`
     display: flex;
     width: 100%;
-    height: 3.7rem;
+    height: 3.8rem;
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
@@ -37,6 +37,9 @@ const StyledNavbarLinks = styled.div`
         
     }
 
+    ul li a {
+        color: white;
+    }
    
 
     
@@ -107,8 +110,8 @@ export default function NavbarLinks({open, setOpen}) {
                 </ul>
 
                 <ul>
-                        <li><a href="#" target="_blank" rel="noopener"><FaFacebookF/></a></li>
-                        <li><a href="#" target="_blank" rel="noopener"><FaInstagram/></a></li>
+                        <li><a href="https://www.facebook.com/debra.winans.50" target="_blank" rel="noopener"><FaFacebookF/></a></li>
+                        <li><a href="https://www.instagram.com/debra_winans/" target="_blank" rel="noopener"><FaInstagram/></a></li>
                 </ul>
         </StyledNavbarLinks>
     )

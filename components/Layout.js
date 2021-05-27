@@ -38,4 +38,3 @@ Layout.defaultProps = {
     keywords: ''
 }
 
-// Purposely provoking confidence in your identity through wisdom and truth!

@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const StyledHamburger = styled.div`
   width: 2.5rem;
-  height: 3.8rem;
+  height: 4.5rem;
   display: none;
   flex-direction: column;
   align-items: center;
@@ -12,7 +12,6 @@ const StyledHamburger = styled.div`
 
   @media (max-width: 650px) {
     display: flex;
-    height: 4.5rem;
    }
 
   div {
@@ -40,12 +39,6 @@ const StyledHamburger = styled.div`
         transform: ${({open}) => open ? 'rotate(-45deg)' : 'rotate(0)'};
         transform-origin: 0.65rem 0.01rem;
     }
-
-
-
-    
-
-
 
   }
 `

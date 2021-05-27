@@ -9,19 +9,16 @@ import {FaFacebookF, FaInstagram} from 'react-icons/fa'
 const StyledNavbarLinks = styled.div`
     display: flex;
     width: 100%;
-    height: 3.8rem;
+    height: 4.5rem;
     align-items: center;
     justify-content: flex-end;
     text-transform: uppercase;
     
 
-
-
-
     ul {
         display: flex;
         align-items: center;
-        height: 3.7rem;
+        height: 4.5rem;
         
 
         &:nth-child(1) {
@@ -41,10 +38,6 @@ const StyledNavbarLinks = styled.div`
         color: white;
     }
    
-
-    
-
-    
 
     @media (max-width: 650px) {
         position: fixed;
@@ -100,6 +93,11 @@ export default function NavbarLinks({open, setOpen}) {
                     <li>
                         <Link href="/products">
                             <a>Products</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/invite">
+                            <a>Invite</a>
                         </Link>
                     </li>
                     <li>

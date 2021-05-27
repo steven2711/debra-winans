@@ -1,0 +1,29 @@
+.bookDisplay {
+  margin: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border: 1px green solid;
+}
+
+.image {
+  border: 1px black solid;
+  min-width: 50%;
+  text-align: center;
+}
+
+.info {
+  border: 1px blue solid;
+  text-align: center;
+  padding: 2rem;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  min-width: 50%;
+}
+
+@media (max-width: 650px) {
+  .bookDisplay {
+    flex-direction: column;
+  }
+}

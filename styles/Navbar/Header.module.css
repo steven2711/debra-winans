@@ -1,9 +1,9 @@
 /* Desktop */
 
 .header {
-  background: black;
+  background: #001021;
   color: black;
-  height: 3.8rem;
+  height: 4.5rem;
   padding: 0 2rem;
   position: fixed;
   top: 0;
@@ -15,13 +15,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 3.8rem;
+  height: 4.5rem;
 }
 
 .logo {
   font-size: 1.4rem;
   text-transform: uppercase;
-  height: 3.8rem;
+  height: 4.5rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -35,17 +35,14 @@
 @media (max-width: 650px) {
   .header {
     padding: 0;
-    height: 4.5rem;
   }
 
   .header nav {
     justify-content: space-between;
-    height: 4.5rem;
   }
 
   .logo {
     font-size: 1rem;
-    height: 4.5rem;
     padding-left: 1rem;
   }
 }

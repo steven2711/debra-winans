@@ -9,7 +9,7 @@ export default function BookDisplay() {
         <section className={styles.bookDisplay}>
             
             <div className={styles.image}>
-                <Image src="/images/book-cover.jpg" width={500} height={650}/>
+                <Image src="/images/book-cover.jpg" width={500} height={650} priority={true}/>
             </div>
             <div className={styles.info}>
                 <h2>"Life, Altered Not Over" on sale now!</h2>

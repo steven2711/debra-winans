@@ -90,11 +90,11 @@ export default function NavbarLinks({open, setOpen}) {
                         </Link>
                     </li>
                      
-                    <li>
+                    {/* <li>
                         <Link href="/products">
                             <a>Products</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/invite">
                             <a>Invite</a>

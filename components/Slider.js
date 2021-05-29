@@ -5,17 +5,30 @@ import styled from 'styled-components'
 
 const SliderStyled = styled.div`
    
-    border: 1px green solid;
-    height: 500px;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
   
   .slide {
-    padding: 2rem;
+    padding: 1rem;
     text-align: center;
     
+  }
+
+  .name {
+      font-weight: bolder;
+      font-size: 1.2rem;
+      margin-top: 3rem;
+  }
+
+  .church, .location {
+      font-style: italic;
+  }
+
+  .name, .church, .location {
+      line-height: 1;
   }
 
   .fade-in {
@@ -55,6 +68,15 @@ const SliderStyled = styled.div`
 
   .slide-btn button {
       margin: 1.5rem;
+  }
+
+
+  @media (max-width: 414px) {
+      font-size: 1rem;
+
+      .slide {
+          padding: 1rem;
+      }
   }
 
 
@@ -116,9 +138,11 @@ export default function Slider() {
             <div className={fade ? 'fade-in': 'fade-out'}>
                 <div className="slide">
                     <p>"{review.text}"</p>
-                    <p>{review.name}</p>
-                    <p>{review.church}</p>
-                    <p>{review.location}</p>
+
+                
+                    <p className="name">{review.name}</p>
+                    <p className="church">{review.church}</p>
+                    <p className="location">{review.location}</p>
                 </div>
             </div>
             {/* <div className="slide-btn">

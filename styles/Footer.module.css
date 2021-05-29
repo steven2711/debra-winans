@@ -1,8 +1,14 @@
 .footer {
-  margin: 100px 0 40px;
   text-align: center;
-
   width: 100%;
+  bottom: 0;
+  height: 100px;
+  background: #001021;
+  color: white;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .footer p {

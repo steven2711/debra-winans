@@ -14,7 +14,7 @@ export default function BookDisplay() {
             <div className={styles.info}>
                 <h2>"Life, Altered Not Over" on sale now!</h2>
                 <Slider />
-               <Button text="order book" link={true} path="/contact"/>
+               <Button text="order book" link={true} path="/order-book"/>
             </div>
            
         </section>

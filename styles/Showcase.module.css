@@ -4,14 +4,13 @@
 }
 
 .showcase img {
-  width: auto;
-  display: block;
   height: 100%;
 }
 
 @media (max-width: 768px) {
   .showcase {
-    background: #000 url("/images/showcase-2.jpg") no-repeat center center/cover;
+    background: #000 url("/images/showcase-mobile-small.png") no-repeat center
+      center/cover;
     height: 93vh;
   }
 

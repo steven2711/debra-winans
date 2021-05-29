@@ -46,7 +46,7 @@ const StyledNavbarLinks = styled.div`
         flex-direction: column;
         justify-content: center;
         height: 100vh;
-        background-color: rgba(0,0,0,0.8);
+        background-color: rgba(0,0,0,0.9);
         color: white;
         transition: all 0.3s ease;
         transform: ${({open}) => open ? 'scale(1)' : 'scale(0)'};

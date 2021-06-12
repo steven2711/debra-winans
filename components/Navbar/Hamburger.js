@@ -10,7 +10,7 @@ const StyledHamburger = styled.div`
   justify-content: center;
   margin-right: 1rem;
 
-  @media (max-width: 650px) {
+  @media (max-width: 950px) {
     display: flex;
    }
 

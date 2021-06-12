@@ -39,7 +39,7 @@ const StyledNavbarLinks = styled.div`
     }
    
 
-    @media (max-width: 650px) {
+    @media (max-width: 950px) {
         position: fixed;
         overflow: hidden;
         top: 0;
@@ -98,6 +98,11 @@ export default function NavbarLinks({open, setOpen}) {
                     <li>
                         <Link href="/invite">
                             <a>Invite</a>
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="/linking-solutions">
+                            <a>Linking Solutions</a>
                         </Link>
                     </li>
                     <li>

@@ -19,8 +19,8 @@ export default async (req: NextApiRequest, res: NextApiResponse) => {
       quantity
     }],
     mode: 'payment',
-    success_url: `${req.headers.origin}`,
-    cancel_url: `${req.headers.origin}/checkout`,
+    success_url: `${req.headers.origin}/success`,
+    cancel_url: `${req.headers.origin}`,
   })
 
 

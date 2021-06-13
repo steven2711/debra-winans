@@ -1,0 +1,23 @@
+.success {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 95vh;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.success h1 {
+  font-size: 2rem;
+}
+
+.success p,
+.success a {
+  font-size: 1rem;
+}
+
+.success h1,
+.success p {
+  margin-bottom: 2rem;
+}

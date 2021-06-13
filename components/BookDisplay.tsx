@@ -3,15 +3,21 @@ import Image from 'next/image'
 import Slider from '@/components/Slider'
 import Button from '@/components/Button'
 import { loadStripe } from '@stripe/stripe-js';
+import {useState} from 'react'
 
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 
 export default function BookDisplay() {
 
+    const [loading, setLoading] = useState(false)
+
 
     const handleClick = async () => {
         // Get Stripe.js instance
+
+        setLoading(true)
+
         const stripe = await stripePromise;
     
         // Call your backend to create the Checkout Session
@@ -38,6 +44,8 @@ export default function BookDisplay() {
           // error, display the localized error message to your customer
           // using `result.error.message`.
           console.log(result.error)
+        } else {
+            setLoading(false)
         }
       };
 
@@ -54,7 +62,7 @@ export default function BookDisplay() {
             <div className={styles.info}>
                 <h2>"Life, Altered Not Over" on sale now!</h2>
                 <Slider />
-               <Button text="order book" handler={handleClick}/>
+               <Button text="order book" handler={handleClick} isLoading={loading}/>
             </div>
            
         </section>

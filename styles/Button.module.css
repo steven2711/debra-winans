@@ -25,6 +25,33 @@
   transform: scale(1);
 }
 
+.buttonDark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #001021;
+  color: #fff;
+  padding: 15px 30px;
+  cursor: pointer;
+  border: 0;
+  border-radius: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  outline: none;
+}
+
+.buttonDark:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.buttonDark:active {
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  transform: scale(1);
+}
+
 .btnIcon {
   margin-right: 0.5rem;
   font-size: 1.2rem;

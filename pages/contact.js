@@ -2,6 +2,10 @@ import Layout from '@/components/Layout'
 import styles from '@/styles/ContactPage.module.css'
 import {useState} from 'react'
 import Button from '@/components/Button'
+import {FaFacebookF, FaInstagram, FaMapMarkerAlt, FaEnvelope} from 'react-icons/fa'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 export default function ContactPage() {
@@ -10,13 +14,44 @@ export default function ContactPage() {
     const [contactInfo, setContactInfo] = useState({
         name: '',
         email: '',
-        phone: null,
+        phone: '',
         message: ''
     })
 
 
     const handleChange = (e) => {
-        setContactInfo(...contactInfo, {[e.target.name]: e.target.value})
+
+        setContactInfo((prevalue) => {
+            return {...prevalue, [e.target.name]: e.target.value}
+        })
+    }
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+
+        let formData = new FormData(contactInfo)
+
+        let res = await fetch('/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+            },
+            body: new URLSearchParams(formData).toString()
+        })
+
+
+        console.log(res)
+
+        setContactInfo({
+            name: '',
+            email: '',
+            phone: '',
+            message: ''
+        })
+
+        
     }
 
 
@@ -26,12 +61,11 @@ export default function ContactPage() {
         <Layout>
             <div className={styles.contact}>
             <h1>get in touch</h1>
-            <form>
-                <div className={styles.infoSection}>
-                    <div className={styles.info}>
-                        <div className="form-group">
-                            <label for="name">
-                                name<span className="asterisks">*</span>
+            <div className={styles.formBox}>
+            <form name="debra-contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+                        <div className={styles.formgroup}>
+                            <label htmlFor="name">
+                                name<span>*</span>
                             </label>
                             <input
                                 type="text"
@@ -44,9 +78,9 @@ export default function ContactPage() {
                                 required
                             />
                         </div>
-                        <div className="form-group">
-                            <label for="email">
-                                email address<span className="asterisks">*</span>
+                        <div className={styles.formgroup}>
+                            <label htmlFor="email">
+                                email address<span>*</span>
                             </label>
                             <input
                                 type="email"
@@ -59,9 +93,9 @@ export default function ContactPage() {
                                 required
                             />
                         </div>
-                        <div className="form-group">
-                            <label for="phone">
-                                phone number<span className="asterisks">*</span>
+                        <div className={styles.formgroup}>
+                            <label htmlFor="phone">
+                                phone number<span>*</span>
                             </label>
                             <input
                                 type="tel"
@@ -74,14 +108,13 @@ export default function ContactPage() {
                                 required
                             />
                         </div>
-                    </div>
-                    <div className={styles.message}>
-                        <div className="form-group">
-                            <label for="message">
-                                message<span className="asterisks">*</span>
+                        <div className={styles.formgroup}>
+                            <label htmlFor="message">
+                                message<span>*</span>
                             </label>
                             <textarea
                                 className="form-control"
+                                type="text"
                                 id="message"
                                 rows="4"
                                 name="message"
@@ -90,12 +123,24 @@ export default function ContactPage() {
                                 required
                             ></textarea>
                         </div>
-                    </div>
-                </div>
-                <div className="submit-btn">
-                    <Button text='submit' />
+                
+                <div>
+                    <Button text='submit' type='submit'/>
                 </div>
           </form>
+          <div className={styles.infoSection}>
+              <h2>contact info</h2>
+            <ul>
+                <li><FaMapMarkerAlt className={styles.icon}/>P.O Box 931 Mableton, GA 30126</li>
+                <li><FaEnvelope className={styles.icon} />ddjwinans@gmail.com</li>
+            </ul>
+            <h2>follow on</h2>            
+            <ul>
+                <li><a href="https://www.facebook.com/debra.winans.50" target="_blank" rel="noopener"><FaFacebookF/></a></li>
+                <li><a href="https://www.instagram.com/debra_winans/" target="_blank" rel="noopener"><FaInstagram/></a></li>
+            </ul>
+          </div>
+          </div>
             </div>
         </Layout>
     )

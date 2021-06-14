@@ -101,11 +101,11 @@ export default function NavbarLinks({open, setOpen}) {
                             <a>Invite</a>
                         </Link>
                     </li>
-                    <li>
+                    {/* <li>
                         <Link href="/linking-solutions">
                             <a>Linking Solutions</a>
                         </Link>
-                    </li>
+                    </li> */}
                     <li>
                         <Link href="/contact">
                             <a>Contact</a>

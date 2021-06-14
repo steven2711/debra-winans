@@ -1,48 +1,137 @@
 .contact {
-  height: 95vh;
+  margin: 10rem 0;
+}
+
+.contact h1 {
+  text-align: center;
+  margin: 4rem 0;
+  text-transform: uppercase;
+}
+
+.formBox {
+  box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.1);
+  width: 75%;
+  display: flex;
+  height: 35rem;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.formBox form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid blue;
+  justify-content: space-between;
+  text-transform: capitalize;
+  width: 50%;
+  padding: 2rem;
+}
+
+.formBox form input[type="text"],
+.formBox form input[type="email"],
+.formBox form input[type="tel"],
+.formBox form textarea {
+  width: 100%;
+  margin: 0.8rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.formBox form input[type="text"]:focus,
+.formBox form input[type="email"]:focus,
+.formBox form input[type="tel"]:focus,
+.formBox form textarea:focus {
+  border-color: #001021;
+}
+
+.formBox form textarea {
+  resize: none;
 }
 
 .infoSection {
+  background-color: #001021;
+  border-radius: 20px;
+  color: #f8f8f8;
+  width: 50%;
   display: flex;
-  width: 100%;
-  border: 1px solid green;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding: 2rem;
 }
 
-.contact form {
-  padding: 4rem;
+.infoSection h2 {
+  text-transform: capitalize;
 }
 
-.contact label {
-  display: block;
-  margin-bottom: 1rem;
+.infoSection a {
+  color: #f8f8f8;
 }
 
-.contact input[type="text"],
-.contact input[type="email"],
-.contact input[type="tel"],
-.contact textarea {
-  display: block;
-  width: 100%;
-  height: 3rem;
-  padding: 1rem;
-  font-size: 1rem;
+.infoSection ul:nth-child(4) {
+  display: flex;
+  font-size: 2rem;
 }
 
-.contact input[type="submit"] {
-  margin-top: 20px;
-  width: 100%;
-  font-size: 17px;
+.infoSection ul:nth-child(4) li {
+  margin-right: 2rem;
 }
 
-.contact div {
-  margin-bottom: 20px;
+.infoSection ul:nth-child(4) li a:hover {
+  color: #9cb2ce;
+  transition: all 0.3s ease;
 }
 
-.contact small {
-  color: red;
+.infoSection ul:nth-child(2) li {
+  font-size: 1.3rem;
+  margin: 1.6rem 0;
+}
+
+.icon {
+  margin-right: 1.5rem;
+}
+
+@media (max-width: 1100px) {
+  .contact {
+    height: 70vh;
+  }
+
+  .formBox {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  .formBox {
+    flex-direction: column;
+    width: 100%;
+    box-shadow: none;
+    height: auto;
+  }
+
+  .contact {
+    height: auto;
+    margin: 6rem 0 0 0;
+  }
+
+  .contact h1 {
+    margin: 0;
+  }
+
+  .formBox form {
+    width: 100%;
+  }
+
+  .infoSection {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .infoSection ul:nth-child(2) li {
+    font-size: 1.1rem;
+    margin: 1rem 0;
+  }
+
+  .infoSection h2 {
+    margin: 1.5rem 0;
+  }
 }

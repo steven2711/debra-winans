@@ -60,10 +60,12 @@ export default function BookDisplay() {
                 <Image src="/images/book-cover.jpg" width={500} height={650} priority={true}/>
             </div>
             <div className={styles.info}>
-                <h2>"Life, Altered Not Over" on sale now!</h2>
-                <Slider />
-               {/* <Button text="order book" handler={handleClick} isLoading={loading}/> */}
-               <a href='https://checkout.square.site/merchant/9A69W7TFSWGMD/checkout/FRLZJ2KZPN7HDJU52IPOAQGX'>Order Now</a>
+                <h1>Life, Altered Not Over!</h1>
+                <p>My Silent Journey to Wholeness</p>
+                {/* <Slider /> */}
+               <Button text="order now" />
+               <Button text="reflections" link={true} path='/life-altered-not-over' btnDark={true} />
+               {/* <a href='https://checkout.square.site/merchant/9A69W7TFSWGMD/checkout/FRLZJ2KZPN7HDJU52IPOAQGX'>Order Now</a> */}
             </div>
            
         </section>

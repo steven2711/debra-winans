@@ -18,6 +18,8 @@ export default function ContactPage() {
         message: ''
     })
 
+    
+
 
     const handleChange = (e) => {
 
@@ -50,7 +52,11 @@ export default function ContactPage() {
         })
 
 
-        console.log(res)
+        if(res.ok) {
+            toast.success("We got your message!")
+        } else {
+            toast.warn("Oops... something went wrong!")
+        }
 
         setContactInfo({
             name: '',
@@ -62,11 +68,17 @@ export default function ContactPage() {
         
     }
 
-
-
-
     return (
         <Layout>
+            <ToastContainer position="top-right"
+                            autoClose={5000}
+                            hideProgressBar={false}
+                            newestOnTop={false}
+                            closeOnClick
+                            rtl={false}
+                            pauseOnFocusLoss
+                            draggable={false}
+                            pauseOnHover />
             <div className={styles.contact}>
             <h1>get in touch</h1>
             <div className={styles.formBox}>

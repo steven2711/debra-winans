@@ -60,11 +60,22 @@ export default function BookDisplay() {
                 <Image src="/images/book-cover.jpg" width={500} height={650} priority={true}/>
             </div>
             <div className={styles.info}>
-                <h1>Life, Altered Not Over!</h1>
-                <p>My Silent Journey to Wholeness</p>
-                {/* <Slider /> */}
-               <Button text="order now" />
-               <Button text="reflections" link={true} path='/life-altered-not-over' btnDark={true} />
+                <div>
+                    <h1>Life, Altered Not Over!</h1>
+                    <h2>My Silent Journey to Wholeness</h2>
+                </div>
+
+                <div>
+                    <p>
+                    Nothing can inspire us more than a human story with which we can all relate; a story that encourages us to believe in our own dreams and to have faith in the promises of God who sometimes seems far away. Life Altered Not Over! addresses the reality of pain and provides  essential tool for hurting individuals. People in any type of emotional, mental and spiritual pain are looking for “how-to-get-healed tools. This life changing book provides just that…how to be heal, free, whole and to life your best life!
+                    </p>
+                </div>
+
+                <div className={styles.btns}>
+                    <Button text="order now" link={true} path='https://checkout.square.site/merchant/MLH6RXNFN7NQ5/checkout/JQS4HKDONCUF26QAPOTTIUES' />
+                    <Button text="reflections" link={true} path='/life-altered-not-over' btnDark={true} />
+                </div>
+               
                {/* <a href='https://checkout.square.site/merchant/9A69W7TFSWGMD/checkout/FRLZJ2KZPN7HDJU52IPOAQGX'>Order Now</a> */}
             </div>
            

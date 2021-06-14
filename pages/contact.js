@@ -80,8 +80,12 @@ export default function ContactPage() {
             <div className={styles.contact}>
             <h1>get in touch</h1>
             <div className={styles.formBox}>
-            <form name="debra-contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <form name="debra-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="debra-contact" />
+                        <div className={styles.botfield}>
+                            <label>Don’t fill this out if you’re human:</label>
+                            <input name="bot-field" />
+                        </div>
                         <div className={styles.formgroup}>
                             <label htmlFor="name">
                                 name<span>*</span>

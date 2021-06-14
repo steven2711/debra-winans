@@ -37,6 +37,10 @@
   transition: all 0.3s ease;
 }
 
+.botfield {
+  visibility: hidden;
+}
+
 /* .formBox form input[type="text"]:focus,
 .formBox form input[type="email"]:focus,
 .formBox form input[type="tel"]:focus,

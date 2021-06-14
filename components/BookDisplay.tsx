@@ -1,6 +1,5 @@
 import styles from '@/styles/BookDisplay.module.css'
 import Image from 'next/image'
-import Slider from '@/components/Slider'
 import Button from '@/components/Button'
 import { loadStripe } from '@stripe/stripe-js';
 import {useState} from 'react'
@@ -8,7 +7,7 @@ import {useState} from 'react'
 const stripePromise = loadStripe(process.env.NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY);
 
 
-export default function BookDisplay() {
+export default function BookDisplay({display}) {
 
     const [loading, setLoading] = useState(false)
 
@@ -73,12 +72,15 @@ export default function BookDisplay() {
 
                 <div className={styles.btns}>
                     <Button text="order now" link={true} path='https://checkout.square.site/merchant/MLH6RXNFN7NQ5/checkout/JQS4HKDONCUF26QAPOTTIUES' />
-                    <Button text="reflections" link={true} path='/life-altered-not-over' btnDark={true} />
+                    {display ? <Button text='order on amazon' link={true} path='https://www.amazon.com/LIFE-ALTERED-NOT-OVER-Wholeness/dp/1953443001/ref=sr_1_6?dchild=1&keywords=life+altered+not+over+book&qid=1623702537&sr=8-6' /> : <Button text="reflections" link={true} path='/life-altered-not-over' btnDark={true}/>}
                 </div>
-               
-               {/* <a href='https://checkout.square.site/merchant/9A69W7TFSWGMD/checkout/FRLZJ2KZPN7HDJU52IPOAQGX'>Order Now</a> */}
             </div>
            
         </section>
     )
+}
+
+
+BookDisplay.defaultProps = {
+    display: false
 }

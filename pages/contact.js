@@ -87,7 +87,7 @@ export default function ContactPage() {
                             draggable={false}
                             pauseOnHover />
             <div className={styles.contact}>
-            <h1>get in touch</h1>
+            <h1>get in touch!</h1>
             <div className={styles.formBox}>
             <form name="debra-contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="debra-contact" />

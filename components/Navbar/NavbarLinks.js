@@ -37,6 +37,11 @@ const StyledNavbarLinks = styled.div`
     ul li a {
         color: white;
     }
+
+    ul li a:hover {
+        color: #9cb2ce;
+        transition: all 0.3s ease;
+    }
    
 
     @media (max-width: 950px) {
@@ -91,16 +96,16 @@ export default function NavbarLinks({open, setOpen}) {
                         </Link>
                     </li>
                      
-                    {/* <li>
-                        <Link href="/products">
-                            <a>Products</a>
-                        </Link>
-                    </li> */}
                     <li>
+                        <Link href="/life-altered-not-over">
+                            <a>Book</a>
+                        </Link>
+                    </li>
+                    {/* <li>
                         <Link href="/invite">
                             <a>Invite</a>
                         </Link>
-                    </li>
+                    </li> */}
                     {/* <li>
                         <Link href="/linking-solutions">
                             <a>Linking Solutions</a>

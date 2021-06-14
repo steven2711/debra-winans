@@ -1,3 +1,38 @@
 .container {
-  margin-top: 4.5rem;
+  padding: 2rem 7rem;
+  margin-top: 6rem;
+  background-color: #001021;
+  color: #f8f8f8;
+}
+
+.container h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews div {
+  margin: 3rem 0;
+}
+
+.display {
+  margin-top: 6rem;
+}
+
+@media (max-width: 1100px) {
+  .container {
+    padding: 2rem 3rem;
+    margin: 0;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 2rem 0;
+  }
 }

@@ -8,6 +8,7 @@
   top: 0;
   z-index: 100;
   width: 100%;
+  border-bottom: 1px solid #9cb2ce;
 }
 
 .header nav {
@@ -30,6 +31,11 @@
 
 .logo a {
   color: white;
+}
+
+.logo a:hover {
+  color: #9cb2ce;
+  transition: all 0.3s ease;
 }
 
 @media (max-width: 650px) {

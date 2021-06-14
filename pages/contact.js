@@ -31,14 +31,13 @@ export default function ContactPage() {
         e.preventDefault()
 
 
-        let formData = new FormData(contactInfo)
 
         let res = await fetch('/', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: new URLSearchParams(formData).toString()
+            body: new URLSearchParams(contactInfo).toString()
         })
 
 

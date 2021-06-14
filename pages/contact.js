@@ -52,10 +52,10 @@ export default function ContactPage() {
         })
 
 
-        if(res.ok) {
+        if(res.ok === 200) {
             toast.success("We got your message!")
         } else {
-            toast.warn("Oops... something went wrong!")
+            toast.error("Oops... something went wrong!")
         }
 
         setContactInfo({
@@ -64,8 +64,6 @@ export default function ContactPage() {
             phone: '',
             message: ''
         })
-
-        
     }
 
     return (

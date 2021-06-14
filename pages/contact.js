@@ -52,7 +52,7 @@ export default function ContactPage() {
         })
 
 
-        if(res.ok === 200) {
+        if(res.ok) {
             toast.success("We got your message!")
         } else {
             toast.error("Oops... something went wrong!")

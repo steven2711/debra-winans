@@ -66,7 +66,10 @@ export default function BookDisplay({display}) {
 
                 <div>
                     <p>
-                    Nothing can inspire us more than a human story with which we can all relate; a story that encourages us to believe in our own dreams and to have faith in the promises of God who sometimes seems far away. Life Altered Not Over! addresses the reality of pain and provides  essential tool for hurting individuals. People in any type of emotional, mental and spiritual pain are looking for “how-to-get-healed tools. This life changing book provides just that…how to be heal, free, whole and to life your best life!
+                    Nothing can inspire us more than a human story with which we can all relate; a story that encourages us to believe in our own dreams and to have faith in the promises of God who sometimes seems far away. Life Altered Not Over! addresses the reality of pain and provides  essential tool for hurting individuals. People in any type of emotional, mental and spiritual pain are looking for “how-to-get-healed tools. This life changing book provides just that; how to be healed, be free, be whole and to live your best life! Order now to receive an autographed copy!
+                    </p>
+                    <p>
+                        **Note** Amazon orders are not autographed.
                     </p>
                 </div>
 

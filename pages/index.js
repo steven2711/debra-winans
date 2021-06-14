@@ -11,7 +11,7 @@ export default function Home() {
     <Layout>
       <Blockquote quote={`"Purposely provoking confidence in your identity through wisdom and truth!"`} />
       <BookDisplay />
-      <EventBanner />
+      {/* <EventBanner /> */}
       <InviteBanner />
       <Subscribe />
       <SocialMedia />

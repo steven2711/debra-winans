@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import styles from '@/styles/InviteBanner.module.css'
+import Button from '@/components/Button'
 
 
 
@@ -7,8 +7,12 @@ import styles from '@/styles/InviteBanner.module.css'
 export default function InviteBanner() {
     return (
         <section className={styles.banner}>
-            <h2>invite banner section</h2>
-            <p>why should they invite debra to speak? debras accolades</p>
+            <div className={styles.content}>
+                <h2>invite dr. winans</h2>
+                <p>Would you like Dr. Winans to speak at your event? Follow the link and fill out the invitation form!</p>
+                <Button text='submit an invite' link={true} path='/invite' />
+            </div>
+           
         </section>
     )
 }

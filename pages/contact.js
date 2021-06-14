@@ -38,8 +38,6 @@ export default function ContactPage() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-
-
         let res = await fetch('/', {
             method: 'POST',
             headers: {
@@ -50,6 +48,8 @@ export default function ContactPage() {
                 ...contactInfo
             })
         })
+
+        console.log(res)
 
 
         if(res.ok) {

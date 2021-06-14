@@ -26,6 +26,12 @@ export default function ContactPage() {
         })
     }
 
+    const  encode =(data) => {
+        return Object.keys(data)
+            .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+            .join("&")
+      }
+
 
     const handleSubmit = async (e) => {
         e.preventDefault()
@@ -37,7 +43,7 @@ export default function ContactPage() {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: new URLSearchParams(contactInfo).toString()
+            body: encode(contactInfo)
         })
 
 
@@ -62,6 +68,7 @@ export default function ContactPage() {
             <h1>get in touch</h1>
             <div className={styles.formBox}>
             <form name="debra-contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="debra-contact" />
                         <div className={styles.formgroup}>
                             <label htmlFor="name">
                                 name<span>*</span>

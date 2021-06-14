@@ -18,6 +18,9 @@ export default function ContactPage() {
         message: ''
     })
 
+
+    const [isLoading, setIsLoading] = useState(false)
+
     
 
 
@@ -38,6 +41,8 @@ export default function ContactPage() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
+        setIsLoading(true)
+
         let res = await fetch('/', {
             method: 'POST',
             headers: {
@@ -54,8 +59,10 @@ export default function ContactPage() {
 
         if(res.ok) {
             toast.success("We got your message!")
+            setIsLoading(false)
         } else {
             toast.error("Oops... something went wrong!")
+            setIsLoading(false)
         }
 
         setContactInfo({
@@ -64,6 +71,8 @@ export default function ContactPage() {
             phone: '',
             message: ''
         })
+
+        
     }
 
     return (
@@ -148,7 +157,7 @@ export default function ContactPage() {
                         </div>
                 
                 <div>
-                    <Button text='submit' type='submit'/>
+                    <Button text='submit' type='submit' isLoading={isLoading}/>
                 </div>
           </form>
           <div className={styles.infoSection}>

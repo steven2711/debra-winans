@@ -8,10 +8,16 @@ const StyledHamburger = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-right: 1rem;
+  margin-right: 2rem;
 
   @media (max-width: 950px) {
     display: flex;
+    
+   }
+
+   @media (max-width: 650px) {
+    margin-right: 1rem;
+    
    }
 
   div {

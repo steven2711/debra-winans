@@ -62,7 +62,8 @@ export default function BookDisplay() {
             <div className={styles.info}>
                 <h2>"Life, Altered Not Over" on sale now!</h2>
                 <Slider />
-               <Button text="order book" handler={handleClick} isLoading={loading}/>
+               {/* <Button text="order book" handler={handleClick} isLoading={loading}/> */}
+               <a href='https://checkout.square.site/merchant/9A69W7TFSWGMD/checkout/FRLZJ2KZPN7HDJU52IPOAQGX'>Order Now</a>
             </div>
            
         </section>

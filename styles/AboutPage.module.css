@@ -1,3 +1,84 @@
-.about {
+.container {
   margin-top: 4.5rem;
+  padding: 3rem 5rem;
+}
+
+.container h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about {
+  margin-top: 2rem;
+}
+
+.image {
+  border-radius: 50%;
+}
+
+.imageBox {
+  float: left;
+  margin: 1rem 2rem 2rem 2rem;
+}
+
+.text {
+  text-align: center;
+  padding: 0 3rem;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+}
+
+.text p,
+.quote {
+  margin-bottom: 2rem;
+}
+
+.text a {
+  font-style: italic;
+}
+
+.text a:hover {
+  text-decoration: underline;
+}
+
+.quote {
+  background-color: lightgray;
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.quote blockquote {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+}
+
+.quote span {
+  font-style: italic;
+}
+
+@media (max-width: 1400px) {
+  .imageBox {
+    width: 40%;
+  }
+
+  .text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+  .container {
+    padding: 1.5rem;
+  }
+
+  .imageBox {
+    float: none;
+    margin: 1rem auto;
+    width: 90%;
+    text-align: center;
+  }
+
+  .text {
+    padding: 0;
+  }
 }

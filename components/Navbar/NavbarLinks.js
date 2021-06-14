@@ -42,6 +42,7 @@ const StyledNavbarLinks = styled.div`
     @media (max-width: 950px) {
         position: fixed;
         overflow: hidden;
+        
         top: 0;
         flex-direction: column;
         justify-content: center;

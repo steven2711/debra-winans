@@ -43,7 +43,10 @@ export default function ContactPage() {
             headers: {
                 'Content-Type': 'application/x-www-form-urlencoded'
             },
-            body: encode(contactInfo)
+            body: encode({
+                'form-name': 'debra-contact',
+                ...contactInfo
+            })
         })
 
 

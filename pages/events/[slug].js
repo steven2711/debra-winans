@@ -13,7 +13,7 @@ export default function SingleEventPage({event: {imagePath, title, startDate, en
         <Layout title={title}>
             <div className={styles.container}>
                 <div className={styles.imageBox}>
-                    <Image src={imagePath} alt={title} height={900} width={700} />
+                    <Image src={`${imagePath}`} alt={title} height={900} width={700} priority />
                 </div>
 
                 <div className={styles.info}>

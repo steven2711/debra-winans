@@ -8,13 +8,13 @@ import EventBanner from '@/components/EventBanner'
 
 export default function Home() {
   return (
-    <Layout>
+    <Layout title='Home'>
       <Blockquote quote={`"Purposely provoking confidence in your identity through wisdom and truth!"`} />
       <BookDisplay />
-      {/* <EventBanner /> */}
+      <EventBanner />
       <InviteBanner />
-      <Subscribe />
-      <SocialMedia />
+      {/* <Subscribe />
+      <SocialMedia /> */}
     </Layout>
    
   )

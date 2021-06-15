@@ -102,6 +102,11 @@ export default function NavbarLinks({open, setOpen}) {
                         </Link>
                     </li>
                     {/* <li>
+                        <Link href="/events">
+                            <a>Events</a>
+                        </Link>
+                    </li> */}
+                    {/* <li>
                         <Link href="/invite">
                             <a>Invite</a>
                         </Link>

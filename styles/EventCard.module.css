@@ -1,0 +1,42 @@
+.card {
+  background: #f8f8f8;
+  border-radius: 20px;
+  max-width: 400px;
+  margin: 0 1rem 2rem;
+  color: #001021;
+}
+
+.imageContainer {
+  padding: 1rem;
+}
+
+.image {
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 250px;
+}
+
+.info {
+  padding: 1rem;
+}
+
+.info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-transform: capitalize;
+}
+
+.info h4 {
+  margin: 0.5rem 0;
+  font-style: italic;
+}
+
+.info p {
+  margin: 1rem 0;
+  line-height: 1.8;
+}
+
+.info button {
+  margin: 1rem auto;
+}

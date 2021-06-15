@@ -54,7 +54,6 @@ export default function ContactPage() {
             })
         })
 
-        console.log(res)
 
 
         if(res.ok) {
@@ -76,7 +75,7 @@ export default function ContactPage() {
     }
 
     return (
-        <Layout>
+        <Layout title='Contact'>
             <ToastContainer position="top-right"
                             autoClose={5000}
                             hideProgressBar={false}

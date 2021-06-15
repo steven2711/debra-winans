@@ -1,10 +1,34 @@
 .banner {
-  height: 300px;
-  background: #9cb2ce;
-  color: #001021;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  color: #f8f8f8;
+  width: 100%;
+  background: #001021;
+  padding: 3rem 2rem;
+}
+
+.banner h2 {
   text-align: center;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+}
+
+.eventBox {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.moreBtn button {
+  margin: 2rem auto;
+}
+
+@media (max-width: 650px) {
+  .banner {
+    padding: 2rem 0;
+  }
+
+  .eventBox {
+    padding: 2rem 0.5rem;
+  }
 }

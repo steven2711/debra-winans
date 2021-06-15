@@ -1,4 +1,5 @@
-.invite {
+.container {
+  margin-top: 4.5rem;
   margin-top: 4.5rem;
   height: 85vh;
   display: flex;
@@ -7,11 +8,11 @@
   flex-direction: column;
 }
 
-.invite h1 {
+.container h1 {
   font-style: italic;
   text-transform: capitalize;
 }
 
-.invite p {
+.container p {
   text-transform: capitalize;
 }

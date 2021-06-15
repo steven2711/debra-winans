@@ -43,12 +43,14 @@
   margin-bottom: 2rem;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1800px) {
   .banner {
     background: #001021 url("/images/debra-winans-invite-sm.png") no-repeat
       center center/cover;
   }
+}
 
+@media (max-width: 1100px) {
   .content {
     width: 40%;
     margin-left: 4rem;

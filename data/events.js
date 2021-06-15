@@ -11,7 +11,7 @@ export const events = [
 
         "imagePath": "/images/event-flyer.png",
     
-        "title": "new wine womens bible study 2021",
+        "title": "new wine women's bible study 2021",
     
         "startDate": "June 29, 2021",
 

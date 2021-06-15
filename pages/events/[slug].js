@@ -1,7 +1,6 @@
 import Layout from '@/components/Layout'
 import styles from '@/styles/EventPage.module.css'
 import { slugify } from '../../helpers'
-import {NEXT_URL} from '../../config'
 import Button from '@/components/Button'
 import Image from 'next/image' 
 
@@ -9,8 +8,8 @@ import Image from 'next/image'
 export default function SingleEventPage({event: {imagePath, title, startDate, endDate, time, days, price, purchasePath, excerpt}}) {
 
 
-
     return (
+
         <Layout title={title}>
             <div className={styles.container}>
                 <div className={styles.imageBox}>
@@ -46,22 +45,37 @@ export default function SingleEventPage({event: {imagePath, title, startDate, en
 }
 
 
-export async function getServerSideProps({params}) {
+export async function getStaticPaths() {
 
-    const {slug} = params
+    const {events} = (await import('../../data/events'))
 
-
-    const res = await fetch(`${NEXT_URL}/api/events`)
-
-    const events = await res.json()
-
-    const event = events.filter(event => slugify(event.title) === slug)
-
+    
+    const slugs = events.map(event => slugify(event.title))
+    const paths = slugs.map(slug => ({params: {slug}}))
 
 
     return {
-      props: {event: event[0]}, // will be passed to the page component as props
-    }
+      paths,
+      fallback: false // See the "fallback" section below
+    };
   }
 
+
+
+export async function getStaticProps({params:{slug}}) {
+
+
+    const {events} = (await import('../../data/events'))
+    const event = events.filter(event => slugify(event.title) === slug)
+
+    if (!event) {
+      return {
+        notFound: true,
+      }
+    }
+  
+    return {
+      props: { event: event[0] }, // will be passed to the page component as props
+    }
+  }
 

@@ -9,7 +9,7 @@ export const events = [
 
         "smallImagePath": "/images/event-sm.png",
 
-        "imagePath": "/images/event-flyer.png",
+        "imagePath": "/images/event-flyer.jpg",
     
         "title": "new wine women's bible study 2021",
     

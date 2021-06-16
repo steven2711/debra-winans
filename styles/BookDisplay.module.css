@@ -14,7 +14,7 @@
 
 .info {
   text-align: center;
-  padding: 2rem;
+  padding: 0 3rem;
   line-height: 1.5;
   font-size: 1.2rem;
   display: flex;
@@ -22,10 +22,6 @@
   align-items: center;
   justify-content: space-between;
   min-width: 50%;
-}
-
-.info div {
-  margin: 1.5rem 0;
 }
 
 .btns {
@@ -67,10 +63,6 @@
   .bookDisplay {
     padding: 0;
     height: 100%;
-  }
-
-  .info {
-    padding: 0 1rem;
   }
 
   .info h1 {

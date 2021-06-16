@@ -101,11 +101,11 @@ export default function NavbarLinks({open, setOpen}) {
                             <a>Book</a>
                         </Link>
                     </li>
-                    {/* <li>
-                        <Link href="/events">
+                    <li>
+                        <Link href="/events/new-wine-women's-bible-study-2021">
                             <a>Events</a>
                         </Link>
-                    </li> */}
+                    </li>
                     {/* <li>
                         <Link href="/invite">
                             <a>Invite</a>

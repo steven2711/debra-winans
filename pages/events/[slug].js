@@ -53,6 +53,7 @@ export async function getStaticPaths() {
     const slugs = events.map(event => slugify(event.title))
     const paths = slugs.map(slug => ({params: {slug}}))
 
+    console.log(slugs)
 
     return {
       paths,

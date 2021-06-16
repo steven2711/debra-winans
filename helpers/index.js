@@ -2,5 +2,12 @@ export const slugify = (phrase) => {
 
     const space = / /g
 
-    return phrase.replace(space, '-').toLowerCase()
+    const apostrophy = /\'/g
+
+    let removedWhiteSpace = phrase.replace(space, '-').toLowerCase()
+
+    let removedApostrohy = removedWhiteSpace.replace(apostrophy, '')
+
+
+    return removedApostrohy
 }

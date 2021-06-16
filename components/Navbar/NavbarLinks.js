@@ -102,7 +102,7 @@ export default function NavbarLinks({open, setOpen}) {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/events/new-wine-women's-bible-study-2021">
+                        <Link href="/events/new-wine-womens-bible-study-2021">
                             <a>Events</a>
                         </Link>
                     </li>

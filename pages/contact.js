@@ -163,7 +163,7 @@ export default function ContactPage() {
               <h2>contact info</h2>
             <ul>
                 <li><FaMapMarkerAlt className={styles.icon}/>P.O Box 931 Mableton, GA 30126</li>
-                <li><FaEnvelope className={styles.icon} />ddjwinans@gmail.com</li>
+                <li><FaEnvelope className={styles.icon} />drdebradwinans@gmail.com</li>
             </ul>
             <h2>follow on</h2>            
             <ul>

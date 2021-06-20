@@ -21,13 +21,13 @@ export const reviews = [
     }, 
     {
         "id": 2,
-        "text": "Only someone who has experienced a tremendous depth of pain and heartbreak could write in such a powerful and refreshing way. I was captivated as I read about Debra’s journey, and how her past pain has turned into her present power. You will be challenged to examine your own heart, forgive, and comfort others with the same comfort you have received. I commend Debra’s courage for writing this book!",
+        "text": "I remember being asked whether or not anybody would read a book about my life story.  My answer, probably not. Debra Winans, however, has compiled pages of life experiences that I believe will edify, encourage, and uplift the readers. Most authors that write novels of this nature usually come across bitter and resentful. This book is far from the usual man-bashing, vent-fest that wounded people have a tendency of flocking to. I truly believe those that have had 'life' happen to them can find healing, help, and restoration in these comforting passages. There is still life in you!",
     
-        "name": "Nancy Alcorn",
+        "name": "Jonathan Miller",
     
-        "church": "Founder of Mercy Ministries",
+        "church": "",
     
-        "location": "Nashville, Tennessee"
+        "location": ""
     },
     {
         "id": 3,

@@ -22,6 +22,17 @@ export default function SingleEventPage({event: {imagePath, title, startDate, en
                     <h2>{time}</h2>
                     <h2>{days ? `on ${days}` : null}</h2>
                     <p>{excerpt}</p>
+                    <h2>topics covered</h2>
+                    <ul>
+                      <li>too many voices</li>
+                      <li>breaking the silence</li>
+                      <li>betrayal & forgiveness</li>
+                      <li>perception is everything</li>
+                      <li>the best is yet to come</li>
+                    </ul>
+
+                    <p>To register for the class, please choose from the selections below. You can also Cash App me at <strong>$Debrawinans</strong>. If you decide to use Cash App, make sure you include your email address in the memo section.</p>
+                    <p>Once registered, you will receive an email confirmation with pertinent class information, including the zoom link to join the class.</p>
 
                     <div className={styles.pricing}>
                         <div>
@@ -29,6 +40,7 @@ export default function SingleEventPage({event: {imagePath, title, startDate, en
                             <Button text='purchase class' link={true} path={purchasePath} />
                         </div>
                         <p>**choose this option if you already have a copy of 'Life Altered, Not Over'**</p>
+
 
                         <div>
                             <span>$64</span>

@@ -7,7 +7,7 @@ export default function Footer() {
       <p>
         Built by{" "}
         <a href="https://www.stevenraywatson.com" target="_blank">
-          Cyber Dojo
+          SW Web Design
         </a>
       </p>
     </footer>

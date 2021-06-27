@@ -44,6 +44,13 @@ export default function Layout({
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={imagePath} />
+
+        {/* Google Search Console Verification */}
+
+        <meta
+          name="google-site-verification"
+          content="hvQu1l2Xh05t97JlZb6ogixWptTXAXanJjkG_1_m2l8"
+        />
       </Head>
 
       <Header />

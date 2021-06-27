@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://debradwinans.com/sitemap.xml

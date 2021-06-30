@@ -65,7 +65,7 @@ export default function SingleEventPage({
             </p>
 
             <div>
-              <span>$87</span>
+              <span>$62</span>
               <Button
                 text="buy class and book"
                 link={true}

@@ -59,23 +59,6 @@ export default function SingleEventPage({
               <span>{price}</span>
               <Button text="purchase class" link={true} path={purchasePath} />
             </div>
-            <p>
-              **choose this option if you already have a copy of 'Life Altered,
-              Not Over'**
-            </p>
-
-            <div>
-              <span>$62</span>
-              <Button
-                text="buy class and book"
-                link={true}
-                path="https://checkout.square.site/merchant/MLH6RXNFN7NQ5/checkout/KONGE2FKCSIN5OCHWEZERYIE"
-              />
-            </div>
-            <p>
-              **choose this option if you DO NOT have a copy of 'Life Altered,
-              Not Over.' You must have a book for entry**
-            </p>
           </div>
         </div>
       </div>

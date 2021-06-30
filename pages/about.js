@@ -25,41 +25,14 @@ export default function AboutPage() {
 
           <div className={styles.text}>
             <p>
-              <strong>Dr. Debra D. Winans</strong> is the CEO of Linking
-              Solutions, a Marketplace Network Company that makes divine
-              connections in business and ministries. Debra earned her Bachelor
-              of Science in (ORCO) Organization and Communications with a minor
-              in Women and Gender Studies at Middle Tennessee State University,
-              as well as served on the President’s Commission for Women at the
-              same institution. She also holds an Honorary Doctor of Philosophy
-              from Indiana Bible College, and has earned numerous certificate’s
-              for teaching, training and counseling in Sexual Assault Advocacy
-              Training.
-            </p>
-
-            <p>
-              With more than two decades of experiencing helping building and
-              leading organizations, both religious and secular arenas, Debra
-              has an uncanny ability to refine business operations and reconnect
-              them to their original mission and goals; to drive the company’s
-              production capacity and profitability. Ms. Winans brilliantly
-              identifies the crucial areas that need to be reconstructed to
-              revitalize the leadership and to promote vitality and growth in
-              deprived areas.
-            </p>
-
-            <p>
-              Debra is the author of two books:{" "}
+              <strong>Debra D. Winans</strong> is CEO of Linking Solutions, a
+              Marketplace Network Company. Debra is the author of
               <Link href="/life-altered-not-over">
-                <a>Life Altered, Not Over</a>
+                Life Altered, Not Over…My Silent Journey to Wholeness
               </Link>
-              , which deals with the recovery and life process after divorce and{" "}
-              <em>The Invitation</em>, Thomas Nelson’s first women’s devotions
-              collaborated with 50 women around the world. It is her passion to
-              see men and women walk in their purpose despite the tragic
-              circumstances in their lives, to be whole in every area of life in
-              a place of freedom, peace and the pursuit of purpose. Debra’s
-              undying motto is:
+              , which deals with the recovery process of divorce; that the
+              purpose of God for our lives does not change like our
+              circumstances. Debra’s undying motto is:
             </p>
 
             <div className={styles.quote}>
@@ -68,6 +41,39 @@ export default function AboutPage() {
               </blockquote>
               <span>-Dr. Debra D. Winans</span>
             </div>
+
+            <p>
+              Debra’s passion is to see men and women walk in their divine
+              purpose despite all the tragic circumstances in their lives, to be
+              whole in every area of life and to live in a place of freedom,
+              peace, and the pursuit of purpose. With more than two decades of
+              experience helping to build leading organizations (both religious
+              and secular), Debra has an uncanny ability to refine business
+              operations and reconnect them to their original mission and goals,
+              to drive the company’s production capacity and profitability. Ms.
+              Winans brilliantly identifies the crucial areas that need to be
+              reconstructed to revitalize the leadership and to promote vitality
+              and growth in deprived areas.
+            </p>
+
+            <p>
+              Ms. Winans has earned numerous certificates for teaching,
+              training, and counseling in Sexual Assault Advocacy Training. It
+              is no wonder that she has become a highly sought motivational
+              speaker and teacher, gracing colleges and conferences all over the
+              country. Her pearls of wisdom, foresight and understanding are
+              precious commodities that many are seeking.
+            </p>
+
+            <p>
+              Debra has earned a Bachelor of Science in (ORCO) Organization and
+              Communications with a minor in Women and Gender Studies at Middle
+              Tennessee State University. She has received an Honorary Doctorate
+              in Philosophy from Trinity International University of Ambassadors
+              College. Debra served on the President’s Commission for Women at
+              Middle Tennessee State University. She has two beautiful children
+              Miya Destiny and Benjamin David, the loves of her life.
+            </p>
 
             <p>
               Debra has two amazing children, Miya Destiny and Benjamin David,

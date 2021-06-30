@@ -20,7 +20,7 @@ export const events = [
 
     days: "Tuesdays",
 
-    price: "$75",
+    price: "$50",
 
     purchasePath:
       "https://checkout.square.site/merchant/MLH6RXNFN7NQ5/checkout/KFNMIVLZK7VSTCVGCFMGWYBJ",

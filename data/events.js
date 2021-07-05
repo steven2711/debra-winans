@@ -6,7 +6,7 @@ export const events = [
 
     smallImagePath: "/images/event-sm.png",
 
-    imagePath: "/images/event-flyer.jpg",
+    imagePath: "/images/event-flyer.png",
 
     title: "new wine women's bible study 2021",
 

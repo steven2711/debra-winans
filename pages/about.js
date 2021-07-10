@@ -71,8 +71,7 @@ export default function AboutPage() {
               Tennessee State University. She has received an Honorary Doctorate
               in Philosophy from Trinity International University of Ambassadors
               College. Debra served on the President’s Commission for Women at
-              Middle Tennessee State University. She has two beautiful children
-              Miya Destiny and Benjamin David, the loves of her life.
+              Middle Tennessee State University.
             </p>
 
             <p>

@@ -22,10 +22,10 @@
 }
 
 .text {
-  text-align: center;
   padding: 0 3rem;
   font-size: 1.3rem;
-  line-height: 2.3rem;
+  line-height: 2.5rem;
+  text-indent: 2rem;
 }
 
 .text p,
@@ -44,9 +44,11 @@
 .quote {
   background-color: lightgray;
   padding: 2rem;
+  margin-left: 150px;
+  text-align: center;
   border-radius: 20px;
-  width: 50%;
-  float: right;
+  display: inline-block;
+  border: 1px solid blue;
 }
 
 .quote blockquote {
@@ -73,6 +75,7 @@
 
   .quote {
     width: 100%;
+    margin-left: 0;
   }
 }
 

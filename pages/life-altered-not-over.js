@@ -10,7 +10,7 @@ export default function LifeAlteredNotOverPage() {
   return (
     <Layout
       title="Life Altered, Not Over! | Reflections"
-      description="Life Altered, Not Over addresses the reality of pain and provides essential tool for hurting individuals."
+      description="Life Altered, Not Over addresses the reality of pain and provides essential tool for hurting individuals. Now available on Amazon."
       imagePath="/images/book-cover.jpg"
     >
       <div className={styles.display}>

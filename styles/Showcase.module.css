@@ -2,28 +2,14 @@
   width: 100%;
 }
 
-.showcase img {
-  height: auto;
-  width: 100%;
-  display: block;
-}
-
 @media (max-width: 1024px) {
-  .showcase img {
+  .showcase {
     margin-top: 2rem;
   }
 }
 
-@media (max-width: 414px) {
+@media (max-width: 540px) {
   .showcase {
-    background: #000 url("/images/showcase-mobile-small.png") no-repeat center
-      center/cover;
-    height: 93vh;
-    width: auto;
-    margin-top: 1rem;
-  }
-
-  .showcase img {
-    display: none;
+    margin-top: 3rem;
   }
 }

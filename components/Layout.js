@@ -11,6 +11,8 @@ export default function Layout({
   keywords,
   description,
   imagePath,
+  script,
+  scriptType,
   children,
 }) {
   const router = useRouter();
@@ -51,6 +53,10 @@ export default function Layout({
           name="google-site-verification"
           content="hvQu1l2Xh05t97JlZb6ogixWptTXAXanJjkG_1_m2l8"
         />
+
+        {/* Rich Search Result Scripts */}
+
+        {script ? <script type={scriptType}>{script}</script> : null}
       </Head>
 
       <Header />

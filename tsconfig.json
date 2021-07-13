@@ -1,19 +1,15 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-        "paths": {
-            "@/components/*":["components/*"],
-            "@/styles/*":["styles/*"],
-            "@/config/*":["config/*"],
-            "@/context/*":["context/*"],
-            "@/helpers/*":["helpers/*"]
-        },
+    "paths": {
+      "@/components/*": ["components/*"],
+      "@/styles/*": ["styles/*"],
+      "@/config/*": ["config/*"],
+      "@/context/*": ["context/*"],
+      "@/helpers/*": ["helpers/*"]
+    },
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": false,
@@ -29,9 +25,8 @@
   "include": [
     "next-env.d.ts",
     "**/*.ts",
-    "**/*.tsx"
+    "**/*.tsx",
+    "components/BookDisplay.js"
   ],
-  "exclude": [
-    "node_modules"
-  ]
+  "exclude": ["node_modules"]
 }

@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className={styles.about}>
           <div className={styles.imageBox}>
             <Image
-              src="/images/showcase-2.jpg"
+              src="/images/debra-winans.jpg"
               width={500}
               height={600}
               alt="Dr. Debra D. Winans"
@@ -26,9 +26,9 @@ export default function AboutPage() {
           <div className={styles.text}>
             <p>
               <strong>Debra D. Winans</strong> is CEO of Linking Solutions, a
-              Marketplace Network Company. Debra is the author of
+              Marketplace Network Company. Debra is the author of{" "}
               <Link href="/life-altered-not-over">
-                Life Altered, Not Over…My Silent Journey to Wholeness
+                Life Altered, Not Over… My Silent Journey to Wholeness
               </Link>
               , which deals with the recovery process of divorce; that the
               purpose of God for our lives does not change like our

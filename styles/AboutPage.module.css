@@ -1,6 +1,6 @@
 .container {
   margin-top: 4.5rem;
-  padding: 3rem 7rem;
+  padding: 3rem 10rem;
 }
 
 .container h1 {
@@ -24,13 +24,12 @@
 .text {
   padding: 0 3rem;
   font-size: 1.3rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   text-indent: 2rem;
 }
 
-.text p,
-.quote {
-  margin-bottom: 2rem;
+.text p {
+  margin: 2rem 0;
 }
 
 .text a {
@@ -44,7 +43,7 @@
 .quote {
   background-color: lightgray;
   padding: 2rem;
-  margin-left: 150px;
+  width: 45%;
   text-align: center;
   border-radius: 20px;
   display: inline-block;
@@ -53,6 +52,7 @@
 .quote blockquote {
   font-size: 1.5rem;
   padding: 1rem 0;
+  width: 100%;
 }
 
 .quote span {
@@ -61,7 +61,7 @@
 
 @media (max-width: 1400px) {
   .container {
-    padding: 3rem;
+    padding: 2rem;
   }
 
   .imageBox {
@@ -71,10 +71,11 @@
   .text {
     width: 100%;
   }
+}
 
+@media (max-width: 1055px) {
   .quote {
     width: 100%;
-    margin-left: 0;
   }
 }
 

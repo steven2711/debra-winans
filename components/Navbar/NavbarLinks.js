@@ -80,12 +80,6 @@ export default function NavbarLinks({ open, setOpen }) {
           </Link>
         </li>
         <li>
-          <Link href="/contact">
-            <a>Contact</a>
-          </Link>
-        </li>
-
-        <li>
           <Link href="/life-altered-not-over">
             <a>Book</a>
           </Link>
@@ -98,6 +92,11 @@ export default function NavbarLinks({ open, setOpen }) {
         <li>
           <Link href="/event-invite-form">
             <a>Invite</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/contact">
+            <a>Contact</a>
           </Link>
         </li>
       </ul>

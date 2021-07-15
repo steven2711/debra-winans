@@ -12,60 +12,60 @@ import "react-toastify/dist/ReactToastify.css";
 import Button from "@/components/Button";
 
 export default function ContactPage() {
-  // const [contactInfo, setContactInfo] = useState({
-  //   name: "",
-  //   email: "",
-  //   phone: "",
-  //   message: "",
-  // });
+  const [contactInfo, setContactInfo] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
 
-  // const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  // const handleChange = (e) => {
-  //   setContactInfo((prevalue) => {
-  //     return { ...prevalue, [e.target.name]: e.target.value };
-  //   });
-  // };
+  const handleChange = (e) => {
+    setContactInfo((prevalue) => {
+      return { ...prevalue, [e.target.name]: e.target.value };
+    });
+  };
 
-  // const encode = (data) => {
-  //   return Object.keys(data)
-  //     .map(
-  //       (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-  //     )
-  //     .join("&");
-  // };
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-  //   setIsLoading(true);
+    setIsLoading(true);
 
-  //   let res = await fetch("/", {
-  //     method: "POST",
-  //     headers: {
-  //       "Content-Type": "application/x-www-form-urlencoded",
-  //     },
-  //     body: encode({
-  //       "form-name": "debra-contact",
-  //       ...contactInfo,
-  //     }),
-  //   });
+    let res = await fetch("/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: encode({
+        "form-name": "debra-contact",
+        ...contactInfo,
+      }),
+    });
 
-  //   if (res.ok) {
-  //     toast.success("We got your message!");
-  //     setIsLoading(false);
-  //   } else {
-  //     toast.error("Oops... something went wrong!");
-  //     setIsLoading(false);
-  //   }
+    if (res.ok) {
+      toast.success("We got your message!");
+      setIsLoading(false);
+    } else {
+      toast.error("Oops... something went wrong!");
+      setIsLoading(false);
+    }
 
-  //   setContactInfo({
-  //     name: "",
-  //     email: "",
-  //     phone: "",
-  //     message: "",
-  //   });
-  // };
+    setContactInfo({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+  };
 
   return (
     <Layout
@@ -86,7 +86,7 @@ export default function ContactPage() {
       <div className={styles.contact}>
         <h1>get in touch!</h1>
         <div className={styles.formBox}>
-          {/* <form
+          <form
             name="debra-contact"
             method="POST"
             data-netlify="true"
@@ -162,7 +162,7 @@ export default function ContactPage() {
             <div>
               <Button text="submit" type="submit" isLoading={isLoading} />
             </div>
-          </form> */}
+          </form>
           <div className={styles.infoSection}>
             <h2>contact info</h2>
             <ul>

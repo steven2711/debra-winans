@@ -25,11 +25,11 @@
 }
 
 .btns {
-  display: flex;
-  width: 100%;
   margin: 2rem 0;
-  align-items: center;
-  justify-content: space-evenly;
+  border: 1px solid green;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .info h1 {
@@ -40,6 +40,13 @@
 .info p {
   font-size: 1.2rem;
   line-height: 2rem;
+}
+
+@media (max-width: 1300px) {
+  .btns {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -79,10 +86,6 @@
 
   .info div {
     margin: 0.8rem 0;
-  }
-
-  .btns {
-    flex-direction: column;
   }
 
   .btns button {

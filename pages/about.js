@@ -18,7 +18,7 @@ export default function AboutPage() {
               width={500}
               height={600}
               alt="Dr. Debra D. Winans"
-              priority={true}
+              priority="true"
               className={styles.image}
             />
           </div>

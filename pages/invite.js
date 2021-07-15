@@ -95,7 +95,7 @@ export default function InvitePage() {
 
   return (
     <Layout
-      title="Invite"
+      title="Invite Dr. Winans"
       description="Please fill out the form on this page to invite Dr. Winans to your event or organization."
     >
       <ToastContainer

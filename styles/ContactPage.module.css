@@ -41,13 +41,6 @@
   visibility: hidden;
 }
 
-/* .formBox form input[type="text"]:focus,
-.formBox form input[type="email"]:focus,
-.formBox form input[type="tel"]:focus,
-.formBox form textarea:focus {
-  border-color: #001021;
-} */
-
 .formBox form textarea {
   resize: none;
 }

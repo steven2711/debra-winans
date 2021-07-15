@@ -78,6 +78,7 @@ export default function AboutPage() {
               Debra has two amazing children, Miya Destiny and Benjamin David,
               the loves of her life.
             </p>
+            <Link href="/contact">Test</Link>
           </div>
         </div>
       </div>

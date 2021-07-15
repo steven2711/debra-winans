@@ -2,8 +2,6 @@ import Layout from "@/components/Layout";
 import styles from "@/styles/BookPage.module.css";
 import { reviews } from "../data/reviews";
 import Reflection from "@/components/Reflection";
-import Image from "next/image";
-import Button from "@/components/Button";
 import BookDisplay from "@/components/BookDisplay";
 
 export default function LifeAlteredNotOverPage() {

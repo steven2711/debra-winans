@@ -1,5 +1,5 @@
-import styled from "styled-components";
 import Link from "next/link";
+import styled from "styled-components";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 
 const StyledNavbarLinks = styled.div`
@@ -96,7 +96,7 @@ export default function NavbarLinks({ open, setOpen }) {
           </Link>
         </li>
         <li>
-          <Link href="/another">
+          <Link href="/contact">
             <a>Contact</a>
           </Link>
         </li>

@@ -91,7 +91,7 @@ export default function NavbarLinks({ open, setOpen }) {
           </Link>
         </li>
         <li>
-          <Link href="/invite">
+          <Link href="/event-invite-form">
             <a>Invite</a>
           </Link>
         </li>

@@ -1,5 +1,6 @@
 import Layout from "@/components/Layout";
-import styles from "@/styles/ContactPage.module.css";
+import Link from "next/link";
+import styles from "../styles/ContactPage.module.css";
 import { useState } from "react";
 import {
   FaFacebookF,

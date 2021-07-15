@@ -90,11 +90,11 @@ export default function NavbarLinks({ open, setOpen }) {
             <a>Events</a>
           </Link>
         </li>
-        {/* <li>
-                        <Link href="/invite">
-                            <a>Invite</a>
-                        </Link>
-                    </li> */}
+        <li>
+          <Link href="/invite">
+            <a>Invite</a>
+          </Link>
+        </li>
         {/* <li>
                         <Link href="/linking-solutions">
                             <a>Linking Solutions</a>

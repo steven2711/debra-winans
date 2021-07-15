@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
 import styles from "../styles/ContactPage.module.css";
 import { useState } from "react";
 import {
@@ -8,8 +7,8 @@ import {
   FaMapMarkerAlt,
   FaEnvelope,
 } from "react-icons/fa";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
+// import { ToastContainer, toast } from "react-toastify";
+// import "react-toastify/dist/ReactToastify.css";
 import Button from "@/components/Button";
 
 export default function ContactPage() {
@@ -73,7 +72,7 @@ export default function ContactPage() {
       title="Contact"
       description="Please reach out to Dr. Debra D. Winans if you have any questions."
     >
-      <ToastContainer
+      {/* <ToastContainer
         position="top-right"
         autoClose={5000}
         hideProgressBar={false}
@@ -83,7 +82,7 @@ export default function ContactPage() {
         pauseOnFocusLoss
         draggable={false}
         pauseOnHover
-      />
+      /> */}
       <div className={styles.contact}>
         <h1>get in touch!</h1>
         <div className={styles.formBox}>

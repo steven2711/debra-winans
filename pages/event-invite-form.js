@@ -1,5 +1,4 @@
 import Layout from "@/components/Layout";
-import Link from "next/link";
 import styles from "../styles/InvitePage.module.css";
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";

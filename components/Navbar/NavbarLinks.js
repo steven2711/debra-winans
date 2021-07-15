@@ -1,6 +1,7 @@
 import Link from "next/link";
 import styled from "styled-components";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
+import { useRouter } from "next/router";
 
 const StyledNavbarLinks = styled.div`
   display: flex;
@@ -71,6 +72,10 @@ const StyledNavbarLinks = styled.div`
 `;
 
 export default function NavbarLinks({ open, setOpen }) {
+  const router = useRouter();
+
+  // Temporary fix for broken Link component. Links for contact and event form pages do not work on build. WHYYYY
+
   return (
     <StyledNavbarLinks open={open}>
       <ul>

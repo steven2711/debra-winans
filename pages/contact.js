@@ -1,7 +1,6 @@
 import Layout from "@/components/Layout";
 import styles from "@/styles/ContactPage.module.css";
 import { useState } from "react";
-import Button from "@/components/Button";
 import {
   FaFacebookF,
   FaInstagram,
@@ -10,6 +9,7 @@ import {
 } from "react-icons/fa";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import Button from "@/components/Button";
 
 export default function ContactPage() {
   const [contactInfo, setContactInfo] = useState({

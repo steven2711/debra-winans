@@ -1,5 +1,5 @@
-import styles from "@/styles/Button.module.css";
 import Link from "next/link";
+import styles from "@/styles/Button.module.css";
 import { FaRegLaugh } from "react-icons/fa";
 
 export default function Button({

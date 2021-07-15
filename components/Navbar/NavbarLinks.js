@@ -75,7 +75,7 @@ export default function NavbarLinks({ open, setOpen }) {
     <StyledNavbarLinks open={open}>
       <ul>
         <li>
-          <Link href="/about" onClick={() => setOpen(!open)}>
+          <Link href="/about">
             <a>About</a>
           </Link>
         </li>
@@ -95,13 +95,8 @@ export default function NavbarLinks({ open, setOpen }) {
             <a>Invite</a>
           </Link>
         </li>
-        {/* <li>
-                        <Link href="/linking-solutions">
-                            <a>Linking Solutions</a>
-                        </Link>
-                    </li> */}
         <li>
-          <Link href="/contact">
+          <Link href="/another">
             <a>Contact</a>
           </Link>
         </li>

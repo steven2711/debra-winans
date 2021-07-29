@@ -6,6 +6,8 @@ import Subscribe from "@/components/Subscribe";
 import SocialMedia from "@/components/SocialMedia";
 import EventBanner from "@/components/EventBanner";
 
+import { events } from "../data/events";
+
 export default function Home() {
   return (
     <Layout>
@@ -13,7 +15,7 @@ export default function Home() {
         quote={`"Purposely provoking confidence in your identity through wisdom and truth!"`}
       />
       <BookDisplay />
-      <EventBanner />
+      {events.length !== 0 ? <EventBanner /> : null}
       <InviteBanner />
       {/* <Subscribe />
       <SocialMedia /> */}

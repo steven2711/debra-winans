@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styled from "styled-components";
+import { events } from "../../data/events";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { useRouter } from "next/router";
 
@@ -89,11 +90,13 @@ export default function NavbarLinks({ open, setOpen }) {
             <a>Book</a>
           </Link>
         </li>
-        <li>
-          <Link href="/events/new-wine-womens-bible-study-2021">
-            <a>Events</a>
-          </Link>
-        </li>
+        {events.length !== 0 ? (
+          <li>
+            <Link href="/events/new-wine-womens-bible-study-2021">
+              <a>Events</a>
+            </Link>
+          </li>
+        ) : null}
         <li>
           <Link href="/event-invite-form">
             <a>Invite</a>

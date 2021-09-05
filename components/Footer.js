@@ -6,8 +6,8 @@ export default function Footer() {
       <p>Copyright 2021</p>
       <p>
         Built by{" "}
-        <a href="https://www.stevenraywatson.com" target="_blank">
-          SW Web Design
+        <a href="https://www.cyberdojo.co" target="_blank">
+          Cyber Dojo
         </a>
       </p>
     </footer>

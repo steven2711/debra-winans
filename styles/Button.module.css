@@ -1,7 +1,4 @@
 .button {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background: #9cb2ce;
   color: #fff;
   font-size: 1rem;
@@ -9,7 +6,7 @@
   cursor: pointer;
   border: 0;
   max-width: 300px;
-  margin: 1rem auto;
+  text-align: center;
   border-radius: 20px;
   text-transform: uppercase;
   letter-spacing: 2.5px;

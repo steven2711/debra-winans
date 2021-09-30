@@ -92,7 +92,7 @@ export default function NavbarLinks({ open, setOpen }) {
         </li>
         {events.length !== 0 ? (
           <li>
-            <Link href="/events/new-wine-womens-bible-study-2021">
+            <Link href="/events/life-altered-not-over-masterclass">
               <a>Events</a>
             </Link>
           </li>

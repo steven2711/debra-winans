@@ -20,9 +20,7 @@ export default function SingleEventPage({
   return (
     <Layout title={titleCaps} description={excerpt}>
       <div className={styles.container}>
-        <div className={styles.imageBox}>
-          <img src={`${imagePath}`} alt={title} className={styles.image} />
-        </div>
+        <img src={`${imagePath}`} alt={title} className={styles.image} />
 
         <div className={styles.info}>
           <h1>{title}</h1>
@@ -33,14 +31,14 @@ export default function SingleEventPage({
           <h2>{time}</h2>
           <h2>{days ? `on ${days}` : null}</h2>
           <p>{excerpt}</p>
-          <h2>topics covered</h2>
+          {/* <h2>topics covered</h2>
           <ul>
             <li>too many voices</li>
             <li>breaking the silence</li>
             <li>betrayal & forgiveness</li>
             <li>perception is everything</li>
             <li>the best is yet to come</li>
-          </ul>
+          </ul> */}
 
           <p>
             To register for the class, please choose from the selections below.
@@ -55,10 +53,8 @@ export default function SingleEventPage({
           </p>
 
           <div className={styles.pricing}>
-            <div>
-              <span>{price}</span>
-              <Button text="purchase class" link={true} path={purchasePath} />
-            </div>
+            <p>{price}</p>
+            <Button text="purchase class" link={true} path={purchasePath} />
           </div>
         </div>
       </div>

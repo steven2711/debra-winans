@@ -26,11 +26,13 @@ export default function EventCard({
         <h4>{time}</h4>
         <h4>{days ? `Held on ${days}` : null}</h4>
         <p>{excerpt}</p>
-        <Button
-          text="more info"
-          link={true}
-          path={`/events/${slugify(title)}`}
-        />
+        <div className={styles.btnBox}>
+          <Button
+            text="more info"
+            link={true}
+            path={`/events/${slugify(title)}`}
+          />
+        </div>
       </div>
     </div>
   );

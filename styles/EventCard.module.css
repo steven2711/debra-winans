@@ -1,7 +1,7 @@
 .card {
   background: #f8f8f8;
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 500px;
   margin: 0 1rem 2rem;
   color: #001021;
 }
@@ -37,6 +37,9 @@
   line-height: 1.8;
 }
 
-.info button {
-  margin: 1rem auto;
+.btnBox {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

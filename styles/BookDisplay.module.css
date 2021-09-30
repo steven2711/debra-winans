@@ -25,10 +25,10 @@
 }
 
 .btns {
-  margin: 2rem 0;
-  width: 100%;
   display: flex;
-  justify-content: space-around;
+  width: 100%;
+  margin: 2rem 0;
+  justify-content: space-evenly;
 }
 
 .info h1 {
@@ -39,13 +39,6 @@
 .info p {
   font-size: 1.2rem;
   line-height: 2rem;
-}
-
-@media (max-width: 1300px) {
-  .btns {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media (max-width: 1024px) {
@@ -87,14 +80,21 @@
     margin: 0.8rem 0;
   }
 
-  .btns button {
-    margin: 0.5rem 0;
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    height: 10rem;
   }
 }
 
 @media (max-width: 540px) {
   .bookDisplay {
     flex-direction: column;
+  }
+
+  .image {
+    padding: 1rem;
   }
 
   .info {

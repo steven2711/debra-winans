@@ -17,7 +17,7 @@
   right: 0px;
   bottom: 0px;
   left: 0px;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .content {
@@ -26,10 +26,6 @@
   margin-left: 7rem;
   width: 25%;
   text-align: center;
-}
-
-.content button {
-  margin: auto;
 }
 
 .content h2 {
@@ -41,6 +37,13 @@
 .content p {
   font-size: 1.3rem;
   margin-bottom: 2rem;
+}
+
+.content div {
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 1800px) {

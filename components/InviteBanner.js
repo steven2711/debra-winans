@@ -10,7 +10,13 @@ export default function InviteBanner() {
           Would you like Dr. Winans to speak at your event? Follow the link and
           fill out the invitation form!
         </p>
-        <Button text="submit an invite" link={true} path="/event-invite-form" />
+        <div>
+          <Button
+            text="submit an invite"
+            link={true}
+            path="/event-invite-form"
+          />
+        </div>
       </div>
     </section>
   );

@@ -3,16 +3,16 @@ import { slugify } from "../helpers";
 export const events = [
   {
     id: 0,
-    smallImagePath: "/images/debra-winans-masterclass.jpg",
-    imagePath: "/images/debra-winans-masterclass.jpg",
+    smallImagePath: "/images/debra-flyer.jpg",
+    imagePath: "/images/debra-flyer.jpg",
     title: "life altered not over masterclass",
     titleCaps: "Life Altered Not Over Masterclass",
-    startDate: "October 26, 2021",
-    endDate: "November 23, 2021",
-    time: "7:00pm - 8:30pm EST",
+    startDate: "March 1, 2022",
+    endDate: "March 29, 2022",
+    time: "7:00pm - 9:00pm EST",
     days: "Tuesdays",
-    price: "$50",
-    purchasePath: "https://checkout.square.site/buy/6K4N73F5NJWT4OOMIUN6HK3F",
+    price: "$90",
+    purchasePath: "https://square.link/u/U6GcUa8T",
     excerpt:
       "Come join Dr. Debra D. Winans, author of 'Life, Altered Not Over', as she goes through each chapter in her book to discover God's will revealing truth with practical tools and relevant wisdom.",
   },

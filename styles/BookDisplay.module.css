@@ -56,6 +56,13 @@
   .info h2 {
     font-size: 1.6rem;
   }
+
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0;
+    height: 10rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -78,13 +85,6 @@
 
   .info div {
     margin: 0.8rem 0;
-  }
-
-  .btns {
-    flex-direction: column;
-    align-items: center;
-    margin: 1rem 0;
-    height: 10rem;
   }
 }
 

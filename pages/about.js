@@ -5,78 +5,38 @@ import Link from "next/link";
 
 export default function AboutPage() {
   return (
-    <Layout
-      title="About | Dr.Debra D. Winans"
-      imagePath="/images/showcase-2.jpg"
-    >
+    <Layout title="About | Dr.Debra D. Winans" imagePath="/images/showcase-2.jpg">
       <div className={styles.container}>
         <h1>About</h1>
         <div className={styles.about}>
           <div className={styles.imageBox}>
-            <Image
+            {/* <Image
               src="/images/debra-winans.jpg"
               width={500}
               height={600}
               alt="Dr. Debra D. Winans"
               priority="true"
               className={styles.image}
-            />
+            /> */}
           </div>
 
           <div className={styles.text}>
             <p>
-              <strong>Debra D. Winans</strong> is CEO of Linking Solutions, a
-              Marketplace Network Company. Debra is the author of{" "}
-              <Link href="/life-altered-not-over">
-                Life Altered, Not Over… My Silent Journey to Wholeness
-              </Link>
-              , which deals with the recovery process of divorce; that the
-              purpose of God for our lives does not change like our
-              circumstances. Debra’s undying motto is:
-            </p>
-
-            <div className={styles.quote}>
-              <blockquote>
-                “I was not married into a purpose; I was created with purpose!”
-              </blockquote>
-              <span>-Dr. Debra D. Winans</span>
-            </div>
-
-            <p>
-              Debra’s passion is to see men and women walk in their divine
-              purpose despite all the tragic circumstances in their lives, to be
-              whole in every area of life and to live in a place of freedom,
-              peace, and the pursuit of purpose. With more than two decades of
-              experience helping to build leading organizations (both religious
-              and secular), Debra has an uncanny ability to refine business
-              operations and reconnect them to their original mission and goals,
-              to drive the company’s production capacity and profitability. Ms.
-              Winans brilliantly identifies the crucial areas that need to be
-              reconstructed to revitalize the leadership and to promote vitality
-              and growth in deprived areas.
+              A native of Sacramento, California, Debra D. Winans founded Linking Solutions, a Marketplace Network Company that specializes in connecting
+              business professionals and ministries' jurisdictions. She graduated from Middle Tennessee State University and holds a BSC in Organization and
+              Communications with a Minor in Women and Gender Studies. Ms. Winans is a recipient of an Honorary Doctorate Degree from Indian Bible College, for
+              dedication and work serving on the Commission for Women conferred to her by the College's President. She holds numerous certificates in teaching,
+              training, and counseling in Sexual Assault Advocacy.
             </p>
 
             <p>
-              Ms. Winans has earned numerous certificates for teaching,
-              training, and counseling in Sexual Assault Advocacy Training. It
-              is no wonder that she has become a highly sought motivational
-              speaker and teacher, gracing colleges and conferences all over the
-              country. Her pearls of wisdom, foresight and understanding are
-              precious commodities that many are seeking.
+              Ms. Winans is innate to transforming ecclesiastical and secular organizations into high-performance, profitable, and efficient entities. She is
+              the author of <em>Life Altered, Not Over... My Silent Journey to Wholeness</em> and <em>The Invitation</em>, a Thomas Nelson's first women's
+              devotions a collaborative novel.
             </p>
-
             <p>
-              Debra has earned a Bachelor of Science in (ORCO) Organization and
-              Communications with a minor in Women and Gender Studies at Middle
-              Tennessee State University. She has received an Honorary Doctorate
-              in Philosophy from Trinity International University of Ambassadors
-              College. Debra served on the President’s Commission for Women at
-              Middle Tennessee State University.
-            </p>
-
-            <p>
-              Debra has two amazing children, Miya Destiny and Benjamin David,
-              the loves of her life.
+              Ms. Winans desires to empower men and women to overcome challenges and negative perceptions that hinder them from experiencing success. She has
+              two loves in her life, her children, Miya, and Benjamin.
             </p>
           </div>
         </div>
@@ -84,3 +44,5 @@ export default function AboutPage() {
     </Layout>
   );
 }
+
+<Link href="/life-altered-not-over">Life Altered, Not Over… My Silent Journey to Wholeness</Link>;

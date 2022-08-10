@@ -12,6 +12,11 @@
   width: 100%;
 }
 
+.image p {
+  font-size: 30px;
+  padding-top: 100px;
+}
+
 .info {
   text-align: center;
   padding: 0 3rem;
